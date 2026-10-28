@@ -1,0 +1,20 @@
+[project]
+name = "pw1-mikheil-iashvili"
+version = "0.1.0"
+description = "First Practical Task"
+readme = "README.md"
+authors = [
+    { name = "Mikheil Iashvili", email = "mikheil.iashvili.1@btu.edu.ge" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "pytest-html>=4.2.0",
+    "pytest-playwright>=0.10.0",
+]
+
+[project.scripts]
+pw1-mikheil-iashvili = "pw1_mikheil_iashvili:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
