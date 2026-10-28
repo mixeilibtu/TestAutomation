@@ -1,0 +1,19 @@
+ქომანდები
+==================================
+
+uv init pw1-mikheil-iashvili
+cd pw1-mikheil-iashvili
+uv add pytest-playwright pytest-html
+
+uv run playwright install --with-deps chromium
+
+
+uv run pytest -v
+
+uv run pytest tests/test_task2.py -v
+  - only task 2; shows 4 passed 
+
+uv run pytest -k task4 -v
+  - only tests with "task4" in the name
+
+uv run pytest -v --html=report.html --self-contained-html
