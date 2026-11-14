@@ -1,0 +1,13 @@
+ქომანდები
+==================================
+
+uv init midterm-mikheil-iashvili
+cd midterm-mikheil-iashvili
+uv add pytest-playwright pytest-html
+
+uv run playwright install --with-deps chromium
+
+
+uv run pytest -v
+
+uv run pytest -v --html=report.html --self-contained-html
