@@ -1,0 +1,19 @@
+[project]
+name = "playwright-practice"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Mikheil Iashvili", email = "mikheil.iashvili.1@btu.edu.ge" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "pytest-playwright>=0.10.0",
+]
+
+[project.scripts]
+playwright-practice = "playwright_practice:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
